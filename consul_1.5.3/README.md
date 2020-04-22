@@ -10,3 +10,7 @@ pause
 
 
 启动成功之后访问：http://localhost:8500，可以看到 Consul 的管理界面
+
+
+单节点启动模式：
+consul agent -server -ui -bootstrap-expect=1 -data-dir=./ -node=consul-1 -client=0.0.0.0  -bind=172.16.xxx.xxx -datacenter=dc1
